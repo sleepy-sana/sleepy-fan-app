@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>すりぃーぴぃー Fan App</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: #f7fcfe;
+      color: #66828c;
+      font-family: "Hiragino Maru Gothic ProN", "Yu Gothic", sans-serif;
+    }
+
+    .app {
+      max-width: 480px;
+      min-height: 100vh;
+      margin: 0 auto;
+      background: #ffffff;
+      padding-bottom: 90px;
+    }
+
+    header {
+      padding: 35px 24px 20px;
+      text-align: center;
+      background: linear-gradient(180deg, #dff7fc 0%, #ffffff 100%);
+      border-radius: 0 0 35px 35px;
+    }
+
+    .paw {
+      font-size: 28px;
+      color: #9edbe8;
+      margin-bottom: 8px;
+    }
+
+    h1 {
+      margin: 0;
+      color: #72c3d4;
+      font-size: 30px;
+      letter-spacing: 2px;
+    }
+
+    .subtitle {
+      margin-top: 6px;
+      color: #a4c8d0;
+      font-size: 13px;
+    }
+
+    .welcome {
+      margin-top: 20px;
+      color: #78969e;
+      font-size: 16px;
+    }
+
+    .card {
+      margin: 18px 20px;
+      padding: 20px;
+      border-radius: 24px;
+      background: #f2fbfd;
+      border: 1px solid #e1f3f7;
+      box-shadow: 0 5px 18px rgba(150, 210, 220, 0.12);
+    }
+
+    .card-title {
+      color: #65b9ca;
+      font-size: 15px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .next-live {
+      font-size: 18px;
+      color: #668b94;
+    }
+
+    .small {
+      margin-top: 7px;
+      font-size: 13px;
+      color: #9ab4ba;
+    }
+
+    .menu {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 14px;
+      padding: 0 20px;
+    }
+
+    .menu-item {
+      padding: 22px 10px;
+      text-align: center;
+      border-radius: 22px;
+      background: #ffffff;
+      border: 2px solid #edf7f9;
+      box-shadow: 0 5px 15px rgba(150, 210, 220, 0.10);
+      color: #71959d;
+    }
+
+    .menu-item .icon {
+      display: block;
+      font-size: 30px;
+      margin-bottom: 8px;
+    }
+
+    .menu-item .name {
+      font-size: 14px;
+    }
+
+    .locked {
+      position: relative;
+      background: #fffafd;
+      border-color: #f7e9f0;
+    }
+
+    .lock {
+      position: absolute;
+      top: 9px;
+      right: 12px;
+      font-size: 13px;
+    }
+
+    nav {
+      position: fixed;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: min(480px, 100%);
+      height: 72px;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      background: rgba(255, 255, 255, 0.96);
+      border-top: 1px solid #e5f2f5;
+    }
+
+    nav div {
+      text-align: center;
+      color: #9ab7be;
+      font-size: 11px;
+    }
+
+    nav .active {
+      color: #65bfd1;
+    }
+
+    nav span {
+      display: block;
+      font-size: 21px;
+      margin-bottom: 3px;
+    }
+
+    .footer-paw {
+      text-align: center;
+      margin-top: 28px;
+      color: #b8dfe6;
+      font-size: 20px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="app">
+
+    <header>
+      <div class="paw">🐾</div>
+      <h1>すりぃーぴぃー</h1>
+      <div class="subtitle">Fan App</div>
+
+      <div class="welcome">
+        おかえりなさい♡
+      </div>
+    </header>
+
+    <div class="card">
+      <div class="card-title">🌙 つぎの配信</div>
+      <div class="next-live">まだ予定はありません</div>
+      <div class="small">ゆっくり待っててね 💤</div>
+    </div>
+
+    <div class="menu">
+
+      <div class="menu-item">
+        <span class="icon">📅</span>
+        <span class="name">配信カレンダー</span>
+      </div>
+
+      <div class="menu-item">
+        <span class="icon">📖</span>
+        <span class="name">すりぃーぴぃーの投稿</span>
+      </div>
+
+      <div class="menu-item">
+        <span class="icon">💌</span>
+        <span class="name">ファンレター</span>
+      </div>
+
+      <div class="menu-item locked">
+        <span class="lock">🔒</span>
+        <span class="icon">💬</span>
+        <span class="name">1対1チャット</span>
+      </div>
+
+    </div>
+
+    <div class="footer-paw">
+      🐾　☁️　🌙　🐾
+    </div>
+
+    <nav>
+      <div class="active">
+        <span>🏠</span>
+        ホーム
+      </div>
+
+      <div>
+        <span>📅</span>
+        カレンダー
+      </div>
+
+      <div>
+        <span>📖</span>
+        投稿
+      </div>
+
+      <div>
+        <span>👤</span>
+        マイページ
+      </div>
+    </nav>
+
+  </div>
+
+</body>
+</html>
